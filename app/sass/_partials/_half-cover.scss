@@ -1,0 +1,17 @@
+/**
+*   COVER
+*/
+
+.siteWrapper {
+   display: table;
+   min-height: 678px;
+   width: 100%;
+   height: 678px;
+   color: white;
+   text-align: center;
+
+   &-inner {
+      display: table-cell;
+      vertical-align: middle;
+   }
+}
