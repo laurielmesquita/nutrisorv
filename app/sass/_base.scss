@@ -2,7 +2,15 @@
 *   BASE RULES
 */
 
+// Import Google Open Sans font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+
+html, body {
+   height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6, .title {
-   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
    font-weight: bold;
+   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }

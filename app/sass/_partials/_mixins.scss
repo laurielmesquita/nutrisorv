@@ -1,0 +1,7 @@
+/**
+*   MIXINS
+*/
+
+@mixin transition() {
+   transition: all .35s ease-in-out;
+}

@@ -1,7 +1,8 @@
 /**
-*   MAIN
+*   MAIN - IMPORT RULES
 */
 
 @import "_variables";
 @import "_base";
-@import "_partials/_half-cover"
+@import "_partials/_mixins";
+@import "_partials/_half-cover";

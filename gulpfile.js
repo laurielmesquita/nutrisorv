@@ -18,19 +18,22 @@ var gulp = require('gulp')
 , rename = require('gulp-rename')
 , browserSync = require('browser-sync');
 
-// Compress, prefix and process Sass to CSS
+// Compile and compress Sass to CSS and copy Css to dist
 gulp.task('sass', function() {
-   gulp.src('./src/sass/**/*.scss')
+   gulp.src([
+      './app/sass/**/*.scss',
+      './app/styles/**/*.css'
+   ])
    .pipe(sass())
    .pipe(autoprefixer())
    .pipe(cssnano())
-   .pipe(gulp.dest('./dist/css/'));
+   .pipe(gulp.dest('./dist/styles/'));
 })
 
 // Html include and copy
 gulp.task('html', function(){
    return gulp.src([
-      './src/**/*.html',
+      './app/**/*.html',
       '!src/inc/**/*'
    ])
    .pipe(include())
@@ -39,36 +42,36 @@ gulp.task('html', function(){
 
 // Less Css
 gulp.task('uncss', ['html'], function(){
-   return gulp.src('./dist/components/**/*.css')
+   return gulp.src('./dist/styles/**/*.css')
    .pipe(uncss({
       html: ['./dist/**/*.html']
    }))
-   .pipe(gulp.dest('./dist/components/'))
+   .pipe(gulp.dest('./dist/styles/'))
 })
 
 // Optimize images
 gulp.task('imagemin', function(){
-   return gulp.src('./src/imagens/**/*')
+   return gulp.src('./app/images/**/*')
    .pipe(imagemin())
-   .pipe(gulp.dest('./dist/imagens/'))
+   .pipe(gulp.dest('./dist/images/'))
 })
 
 // Concat and minify javascript
 gulp.task('buildjs', function(){
-   return gulp.src('./src/javascript/**/*')
+   return gulp.src('./app/scripts/**/*')
    .pipe(concat('app.min.js'))
    .pipe(uglify())
-   .pipe(gulp.dest('./dist/javascript/'))
+   .pipe(gulp.dest('./dist/scripts/'))
 })
 
 // Minify and prefix SVG
 gulp.task('svgmin', function(){
-   return gulp.src(['src/inc/icons/*.svg', '!src/inc/icons/*.min.svg'])
+   return gulp.src(['./app/inc/icons/*.svg', '!./app/inc/icons/*.min.svg'])
    .pipe(imagemin())
    .pipe(rename({
       suffix: '.min'
    }))
-   .pipe(gulp.dest('./src/inc/icons/'))
+   .pipe(gulp.dest('./app/inc/icons/'))
 })
 
 // Default
@@ -80,18 +83,18 @@ gulp.task('default', ['copy'], function(){
 gulp.task('server', () => {
    browserSync({
     notify: false,
-    logPrefix: 'FRONT-END',
+    logPrefix: 'NUTRI SORV',
     server: ['dist/']
    });
 
    gulp.watch('./dist/**/*').on('change', browserSync.reload)
-   gulp.watch('./src/**/*.html', ['html'])
-   gulp.watch('./src/javascript/*.js', ['buildjs'])
-   gulp.watch('./src/imagens/**/*', ['imagemin'])
-   gulp.watch('./src/sass/**/*.scss', ['sass'])
+   gulp.watch('./app/**/*.html', ['html'])
+   gulp.watch('./app/scripts/*.js', ['buildjs'])
+   gulp.watch('./app/images/**/*', ['imagemin'])
+   gulp.watch('./app/sass/**/*.scss', ['sass'])
    gulp.watch([
-      './src/inc/icons/*.svg',
-      '!./src/inc/icons/*.min.svg'
+      './app/inc/icons/*.svg',
+      '!./app/inc/icons/*.min.svg'
    ], ['svgmin'])
 });
 
@@ -104,9 +107,9 @@ gulp.task('clean', function(){
 // Copy components files
 gulp.task('copy', ['clean'], function(){
    return gulp.src([
-      './src/components/bootstrap/dist/**/*',
-      './src/components/bootstrap/fonts/**/*',
-      './src/components/bootstrap/js/**/*',
-   ], {'base': 'src'})
+      './app/components/bootstrap/dist/**/*',
+      './app/components/bootstrap/fonts/**/*',
+      './app/components/bootstrap/js/**/*',
+   ], {'base': 'app'})
    .pipe(gulp.dest('./dist'))
 })
