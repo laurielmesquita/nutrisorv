@@ -12,9 +12,44 @@
 
    <h1 class="sr-only" hidden>Nutri Sorv</h1>
 
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            @@include('inc/icons/brand.min.svg')
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Empresa</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Cardapio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Nossas Lojas</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">News Room</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
    <!-- Cover intro -->
    <div class="siteWrapper">
-      <img src="images/Parfait_Sorbet-BjarneBaun.png" alt="Imagem da sorveteria" class="">
+      <img src="images/Parfait_Sorbet-BjarneBaun.jpg" alt="Imagem da sorveteria" class="">
       <div class="siteWrapper__overlay"></div>
       <div class="siteWrapper__inner">
          <section class="container">
@@ -25,5 +60,8 @@
       </div>
    </div>
 
+   <script src="scripts/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+   <script src="scripts/popper.min.js" type="text/javascript"></script>
+   <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+/**
+*   NAVBAR
+*/
+
+.navbar-brand {
+   width: 169.19px;
+   height: 40px;
+   background-color: white;
+
+   @media screen and (max-width: 991px) {
+      padding: 0;
+      width: 126.89px;
+      height: 30px;
+   }
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+   color: $main-red;
+}
+
+.navbar-nav .nav-item.active .nav-link:hover {
+   color: rgba(0,0,0,.9);
+}

@@ -58,7 +58,12 @@ gulp.task('imagemin', function(){
 
 // Concat and minify javascript
 gulp.task('buildjs', function(){
-   return gulp.src('./app/scripts/**/*')
+   return gulp.src([
+      './app/scripts/**/*',
+      '!./app/scripts/jquery-3.2.1.slim.min.js',
+      '!./app/scripts/popper.min.js',
+      '!./app/scripts/bootstrap.min.js'
+   ])
    .pipe(concat('app.min.js'))
    .pipe(uglify())
    .pipe(gulp.dest('./dist/scripts/'))
@@ -76,15 +81,15 @@ gulp.task('svgmin', function(){
 
 // Default
 gulp.task('default', ['copy'], function(){
-   gulp.start('uncss', 'imagemin', 'sass', 'buildjs')
+   gulp.start('sass', 'imagemin', 'uncss', 'buildjs')
 })
 
 // Watch files for changes & reload
 gulp.task('server', () => {
    browserSync({
-    notify: false,
-    logPrefix: 'NUTRI SORV',
-    server: ['dist/']
+      notify: false,
+      logPrefix: 'NUTRI SORV',
+      server: ['dist/']
    });
 
    gulp.watch('./dist/**/*').on('change', browserSync.reload)
@@ -107,9 +112,9 @@ gulp.task('clean', function(){
 // Copy components files
 gulp.task('copy', ['clean'], function(){
    return gulp.src([
-      './app/components/bootstrap/dist/**/*',
-      './app/components/bootstrap/fonts/**/*',
-      './app/components/bootstrap/js/**/*',
+      './app/scripts/jquery-3.2.1.slim.min.js',
+      './app/scripts/popper.min.js',
+      './app/scripts/bootstrap.min.js'
    ], {'base': 'app'})
    .pipe(gulp.dest('./dist'))
 })
