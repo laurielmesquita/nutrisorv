@@ -2,10 +2,11 @@
 *   COVER
 */
 
-.siteWrapper {
+.largeCover {
    position: relative;
    display: table;
    overflow: hidden;
+   margin-bottom: 60px;
    min-height: 580px;
    width: 100%;
    height: 678px;
@@ -30,27 +31,17 @@
    }
 
    &__overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 3;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, .32);
-      transition: all .35s linear;
+      z-index: 5;
+      background-color: rgba(0, 0, 0, .23);
 
-      backdrop-filter: saturate(100%) blur(0px);
-      -webkit-backdrop-filter: saturate(100%) blur(0px);
-
+      @include overlay;
    }
 
-   &:hover .siteWrapper__overlay {
+   &:hover .largeCover__overlay {
       background-color: rgba(0, 0, 0, .40);
 
-      backdrop-filter: saturate(140%) blur(10px);
-      -webkit-backdrop-filter: saturate(140%) blur(10px);
+      backdrop-filter: saturate(120%) blur(5px);
+      -webkit-backdrop-filter: saturate(130%) blur(5px);
    }
 
    &__inner {
@@ -87,10 +78,14 @@
    .btn-secondary {
       border: 2px solid #FFF;
       background-color: transparent;
+
       @include transition;
       &:hover {
          background-color: #FFF;
-         color: $main-red;
+         color: darken($main-red, 20);
+      }
+      &:active {
+         background-color: transparent;
       }
    }
 }

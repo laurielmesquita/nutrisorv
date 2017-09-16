@@ -10,10 +10,11 @@
 </head>
 <body>
 
-   <h1 class="sr-only" hidden>Nutri Sorv</h1>
+   <h2 class="sr-only">Nutri Sorv</h2>
 
    <!-- Navbar -->
    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <h2 class="sr-only">Menu navigation</h2>
       <div class="container">
          <a class="navbar-brand" href="#">
             @@include('inc/icons/brand.min.svg')
@@ -22,6 +23,7 @@
             <span class="navbar-toggler-icon"></span>
          </button>
 
+         <!-- Nav menu options -->
          <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
                <li class="nav-item active">
@@ -48,15 +50,43 @@
    </nav>
 
    <!-- Cover intro -->
-   <div class="siteWrapper">
+   <main class="largeCover">
       <img src="images/Parfait_Sorbet-BjarneBaun.jpg" alt="Imagem da sorveteria" class="">
-      <div class="siteWrapper__overlay"></div>
-      <div class="siteWrapper__inner">
-         <section class="container">
-            <h2 class="siteWrapper__title">APROVEITE NOSSOS SABORES NO SEU SOFÁ</h2>
-            <p class="siteWrapper__text">— Ou onde estiver no momento, nós enviaremos para você! —</p>
-            <p><a href="#" class="btn btn-lg btn-secondary">Saiba mais</a></p>
-         </section>
+      <div class="largeCover__overlay"></div>
+      <div class="largeCover__inner">
+         <div class="container">
+            <h1 class="largeCover__title">APROVEITE NOSSOS SABORES NO SEU SOFÁ</h1>
+            <p class="largeCover__text">— Ou onde estiver no momento, nós enviaremos para você! —</p>
+            <p><a href="#" class="btn btn-lg btn-secondary" title="Saiba mais">Saiba mais</a></p>
+         </div>
+      </div>
+   </main>
+
+   <!-- Containt -->
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-5">
+            <section class="smallCover">
+               <img src="images/img01.jpg" alt="Texto alternativo 1">
+               <a href="#" title="O verão chegou!" class="smallCover__link"></a>
+               <div class="smallCover__overlay"></div>
+               <div class="smallCover__inner">
+                  <h3 class="smallCover__title">No ponto para você</h3>
+                  <p class="smallCover__text">Fusce consequat sed massa vel dignissim. Aliquam ut euismod arcu.</p>
+               </div>
+            </section>
+         </div>
+         <div class="col-lg-7">
+            <section class="smallCover">
+               <img src="images/img02.jpg" alt="Texto alternativo 2">
+               <a href="#" title="O verão chegou!" class="smallCover__link"></a>
+               <div class="smallCover__overlay"></div>
+               <div class="smallCover__inner">
+                  <h3 class="smallCover__title">O verão chegou!</h3>
+                  <p class="smallCover__text">Fusce consequat sed massa vel dignissim. Aliquam ut euismod arcu blablabla. consequat sed massa</p>
+               </div>
+            </section>
+         </div>
       </div>
    </div>
 
