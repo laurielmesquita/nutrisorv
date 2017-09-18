@@ -63,7 +63,8 @@ gulp.task('scripts', function(){
       '!./app/scripts/jquery-3.2.1.slim.min.js',
       '!./app/scripts/popper.min.js',
       '!./app/scripts/bootstrap.min.js',
-      '!./app/scripts/imagefill.js'
+      '!./app/scripts/imagefill.js',
+      '!./app/scripts/imagesloaded.js'
    ])
    .pipe(concat('app.min.js'))
    .pipe(uglify())
@@ -116,6 +117,7 @@ gulp.task('copy', ['clean'], function(){
       './app/scripts/jquery-3.2.1.slim.min.js',
       './app/scripts/popper.min.js',
       './app/scripts/bootstrap.min.js',
+      './app/scripts/imagesloaded.js',
       './app/scripts/imagefill.js'
    ], {'base': 'app'})
    .pipe(gulp.dest('./dist'))
