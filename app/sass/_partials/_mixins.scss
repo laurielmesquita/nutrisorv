@@ -2,10 +2,12 @@
 *   MIXINS
 */
 
+// Transitions
 @mixin transition {
    transition: all .3s ease-in-out;
 }
 
+// Hovers
 @mixin overlay {
    position: absolute;
    top: 0;
@@ -15,4 +17,10 @@
    width: 100%;
    height: 100%;
    transition: all .35s linear;
+}
+
+
+
+@mixin img-filter {
+   filter:  saturate(140%) blur(3px);
 }
