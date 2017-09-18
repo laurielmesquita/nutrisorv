@@ -2,6 +2,39 @@
 *   HOMEPAGE
 */
 
+// Rules for dynamic Cover
+.generalCover--fill {
+   margin-bottom: 60px;
+   width: 100%;
+   background-color: $main-black;
+   color: white;
+   text-align: center;
+
+   .btn-lg {
+      padding: .65rem 2rem;
+      border-radius: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: .9rem;
+   }
+
+   .btn-secondary {
+      border: 2px solid #FFF;
+      background-color: transparent;
+
+      @include transition;
+
+      &:hover {
+         background-color: #FFF;
+         color: darken($main-red, 20);
+      }
+
+      &:active {
+         background-color: transparent;
+      }
+   }
+}
+
 .smallCover {
    position: relative;
    overflow: hidden;
@@ -26,6 +59,12 @@
       }
    }
 
+   &.generalCover--fill {
+      height: 478px;
+      color: white;
+      text-align: center;
+   }
+
    img {
       display: block;
       width: 100%;
@@ -38,6 +77,7 @@
    &:hover img {
       filter:  saturate(180%) blur(3px);
    }
+
 
    &__inner {
       position: absolute;
@@ -81,8 +121,30 @@
       font-weight: 400;
       font-size: 1.1rem;
    }
+
+   .largeCover__title {
+      font-size: 2.3rem;
+   }
 }
 
 .col-lg-7 .smallCover {
    margin-bottom: 60px;
+}
+
+.smallCover.generalCover--fill .smallCover__inner,
+.generalCover--fill .largeCover__inner {
+   position: relative;
+   display: table;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+
+   p:last-of-type {
+      margin: 0;
+   }
+
+   .container {
+      display: table-cell;
+      vertical-align: middle;
+   }
 }

@@ -3,31 +3,18 @@
 */
 
 .largeCover {
-   position: relative;
-   display: table;
-   overflow: hidden;
-   margin-bottom: 60px;
-   min-height: 678px;
    width: 100%;
    height: 678px;
-   background-color: $main-black;
-   color: white;
-   text-align: center;
+
+   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
 
    @media screen and (max-width: 576px) {
       height: 580px;
    }
 
    img {
-      position: absolute;
-      top: -9999px;
-      right: -9999px;
-      bottom: -9999px;
-      left: -9999px;
-      z-index: 1;
-      margin: auto;
-      min-width: 100%;
-      min-height: 100%;
+      width: 100%;
+      height: auto;
 
       @include transition;
    }
@@ -61,7 +48,7 @@
       margin-bottom: 1.4rem;
       text-shadow: $df-shadow;
       font-weight: 600;
-      font-size: 2.75rem;
+      font-size: 2.9rem;
    }
 
    &__text {
@@ -69,27 +56,5 @@
       text-shadow: $df-shadow;
       font-weight: 300;
       font-size: 1.7rem;
-   }
-
-   .btn-lg {
-      padding: .65rem 2rem;
-      border-radius: 1.5rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: .9rem;
-   }
-
-   .btn-secondary {
-      border: 2px solid #FFF;
-      background-color: transparent;
-
-      @include transition;
-      &:hover {
-         background-color: #FFF;
-         color: darken($main-red, 20);
-      }
-      &:active {
-         background-color: transparent;
-      }
    }
 }
