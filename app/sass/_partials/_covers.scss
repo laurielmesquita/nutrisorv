@@ -15,22 +15,26 @@
       border-radius: 1.5rem;
       text-transform: uppercase;
       font-weight: 600;
-      font-size: .9rem;
+      font-size: 1rem;
    }
 
    .btn-secondary {
-      border: 2px solid #FFF;
-      background-color: transparent;
+      border: 2px solid white;
+      background-color: white;
+      color: darken($main-red, 10);
 
       @include transition;
 
       &:hover {
-         background-color: #FFF;
-         color: darken($main-red, 20);
+         border: 2px solid white;
+         background-color: transparent;
+         color: white;
       }
 
       &:active {
-         background-color: transparent;
+         border: 2px solid white;
+         background-color: white;
+         color: $main-red;
       }
    }
 }
