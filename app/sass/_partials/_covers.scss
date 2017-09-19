@@ -2,66 +2,12 @@
 *   HOMEPAGE
 */
 
-// Rules for dynamic Cover
-.generalCover--fill {
-   margin-bottom: 60px;
-   width: 100%;
-   background-color: $main-black;
-   color: white;
-   text-align: center;
-
-   .btn-lg {
-      padding: .65rem 2rem;
-      border-radius: 1.5rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 1rem;
-   }
-
-   .btn-secondary {
-      border: 2px solid white;
-      background-color: white;
-      color: darken($main-red, 10);
-
-      @include transition;
-
-      &:hover {
-         border: 2px solid white;
-         background-color: transparent;
-         color: white;
-      }
-
-      &:active {
-         border: 2px solid white;
-         background-color: white;
-         color: $main-red;
-      }
-   }
-}
-
 .smallCover {
    position: relative;
    overflow: hidden;
    margin-bottom: 30px;
    width: 100%;
    height: auto;
-   border-radius: $bd-radius;
-   background-color: $main-black;
-   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
-
-   @include transition;
-
-   &:hover {
-      box-shadow:
-      0 0px 1px rgba(0, 0, 0, 0.2),
-      0 15px 40px rgba(0, 0, 0, 0.3),
-      0 20px 80px rgba(0, 0, 0, 0.1);
-      transform: translateY(-3px) translateZ(0);
-
-      .smallCover__overlay {
-         background-color: rgba(0, 0, 0, .40);
-      }
-   }
 
    &.generalCover--fill {
       height: 478px;
@@ -104,7 +50,6 @@
       background-color: rgba(0, 0, 0, .25);
 
       @include overlay;
-
    }
 
    &__link {
@@ -133,10 +78,6 @@
    .largeCover__text {
       font-size: 1.5rem;
    }
-}
-
-.col-lg-7 .smallCover {
-   margin-bottom: 60px;
 }
 
 .smallCover.generalCover--fill .smallCover__inner,
