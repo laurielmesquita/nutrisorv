@@ -61,9 +61,9 @@
 
 .lineCover-separator {
    display: block;
-   margin-top: 23px;
+   margin-top: 25px;
    margin-right: auto;
-   margin-bottom: 23px;
+   margin-bottom: 25px;
    margin-left: auto;
    width: 45px;
    height: 2px;
@@ -71,8 +71,9 @@
    background-color: $main-red;
    line-height: 40px;
 
-   &.to-rgt {
-      margin-bottom: 20px;
+   &.to-lft {
+      margin-top: 20px;
+      margin-bottom: 18px;
       margin-left: 0;
    }
 }
