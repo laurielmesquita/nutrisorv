@@ -6,9 +6,10 @@ html, body {
    height: 100%;
 }
 
-.card-deck {
-  display: inline-flex;
-  flex-wrap: nowrap;
+.titleSection {
+   font-weight: 700;
+   font-size: 2.5rem;
+   margin-bottom: 15px;
 }
 
 // Rules for dynamic Cover
@@ -58,15 +59,14 @@ html, body {
 
 // Shadows and others effects
 .generalCover--design {
+   overflow: hidden;
    border-radius: $bd-radius;
-   background-color: $main-black;
-   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 
    @include transition;
 
    &:hover {
       box-shadow:
-      0 0px 1px rgba(0, 0, 0, 0.2),
       0 15px 40px rgba(0, 0, 0, 0.3),
       0 20px 80px rgba(0, 0, 0, 0.1);
       transform: translateY(-3px) translateZ(0);

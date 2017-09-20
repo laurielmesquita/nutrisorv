@@ -1,0 +1,42 @@
+/**
+*   NEWS HOME
+*/
+
+.cardCover {
+   margin-bottom: 30px;
+   height: 94%;
+   border: none;
+
+   .card-title {
+      font-weight: 700;
+      font-size: 1.55rem;
+   }
+
+   .card-text {
+      color: #89888d;
+   }
+
+   .card-link {
+      position: relative;
+      display: inline-block;
+      color: $main-red;
+
+      &:before, &:after {
+         position: absolute;
+         top: 51%;
+         right: -12px;
+         display: block;
+         margin-top: -6px;
+         width: 0;
+         height: 8px;
+         border-right: 2px solid;
+         content: '';
+         transform: rotate(135deg);
+      }
+
+      &:after {
+         margin-top: -1px;
+         transform: rotate(45deg);
+      }
+   }
+}
