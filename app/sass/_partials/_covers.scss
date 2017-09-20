@@ -10,6 +10,7 @@
    height: auto;
 
    &.generalCover--fill {
+      margin-bottom: 60px;
       height: 478px;
       color: white;
       text-align: center;
@@ -48,7 +49,7 @@
    &__overlay {
       z-index: 3;
       border-radius: $bd-radius;
-      background-color: rgba(0, 0, 0, .25);
+      background-color: rgba(0, 0, 0, .3);
 
       @include overlay;
    }
