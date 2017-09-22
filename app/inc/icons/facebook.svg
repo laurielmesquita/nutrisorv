@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<rect id="facebook-back" class="iconColor--1" width="32" height="32"/>
+<path id="facebook-facebook" class="iconColor--2" d="M32,0H0l0,0l0,32l0,0h17.092V19.608h-4.17v-4.83h4.17v-3.561
+	c0-4.133,2.524-6.384,6.212-6.384c1.766,0,3.284,0.131,3.726,0.19v4.319l-2.557,0.001c-2.005,0-2.393,0.953-2.393,2.351v3.083h4.782
+	l-0.623,4.83h-4.16V32H32l0,0V0L32,0z"/>
+</svg>

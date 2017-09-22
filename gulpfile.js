@@ -95,7 +95,7 @@ gulp.task('server', () => {
    });
 
    gulp.watch('./dist/**/*').on('change', browserSync.reload)
-   gulp.watch('./app/**/*.html', ['html'])
+   gulp.watch('./app/**/*.html', ['html']).on('change', browserSync.reload)
    gulp.watch('./app/scripts/*.js', ['scripts'])
    gulp.watch('./app/images/**/*', ['imagemin'])
    gulp.watch('./app/sass/**/*.scss', ['sass'])

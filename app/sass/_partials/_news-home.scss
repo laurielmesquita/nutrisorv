@@ -7,6 +7,18 @@
    height: 94%;
    border: none;
 
+   .cardCover__img {
+      overflow: hidden;
+   }
+
+   .card-img-top {
+      @include transition;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+
    .card-title {
       font-weight: 700;
       font-size: 1.55rem;
@@ -32,11 +44,38 @@
          border-right: 2px solid;
          content: '';
          transform: rotate(135deg);
+
+         @include transition;
       }
 
       &:after {
          margin-top: -1px;
          transform: rotate(45deg);
+      }
+
+      &:hover {
+         &:before, &:after {
+            right: -20px;
+         }
+      }
+   }
+}
+
+.newsCover--design {
+   overflow: hidden;
+   border-radius: $bd-radius;
+   box-shadow: 0 10px 20px rgba(0,0,0,.18);
+
+   @include transition;
+
+   &:hover {
+      box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.2),
+      0 20px 80px rgba(0, 0, 0, 0.1);
+      transform: translateY(-3px) translateZ(0);
+
+      .smallCover__overlay {
+         background-color: rgba(0, 0, 0, .43);
       }
    }
 }
