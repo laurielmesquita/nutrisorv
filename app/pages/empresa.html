@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <title>Sobre Nós - Nutri Sorv</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="shortcut icon" href="../favicon.ico">
+
+   <!-- Search and social meta tags -->
+   @@include('../inc/metas.html')
+
+   <!-- Links -->
+   <link rel="stylesheet" href="../styles/bootstrap.min.css">
+   <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+   <h2 class="sr-only">Nutri Sorv</h2>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <h2 class="sr-only">Menu navigation</h2>
+      <div class="container">
+         <a class="navbar-brand" href="../index.html">
+            @@include('../inc/icons/brand.min.svg')
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <!-- Nav menu options -->
+         <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Empresa <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Cardapio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Nossas Lojas</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">News Room</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Cover intro -->
+   <main class="largeCover largeCover--internal generalCover--fill">
+      <img src="../images/cover2.jpg" alt="Imagem da sorveteria">
+      <div class="largeCover__overlay"></div>
+      <div class="largeCover__inner">
+         <div class="container">
+            <h1 class="largeCover__title">NÓS ACREDITAMOS QUE SORVETE É ALEGRIA</h1>
+            <span class="lineCover-separator"></span>
+            <p class="largeCover__text">Puro e de coração para que possa derreter você</p>
+         </div>
+      </div>
+   </main>
+
+   <!-- Containt -->
+   <div class="container">
+      <div class="row">
+
+
+
+      </div>
+   </div>
+
+   <!-- Footer -->
+   @@include('../inc/footer.html')
+
+
+   <script src="../scripts/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+   <script src="../scripts/popper.min.js" type="text/javascript"></script>
+   <script src="../scripts/bootstrap.min.js" type="text/javascript"></script>
+   <script src="../scripts/imagesloaded.js" type="text/javascript"></script>
+   <script src="../scripts/imagefill.js" type="text/javascript"></script>
+   <script>
+   $('.generalCover--fill').imagefill();
+   </script>
+</body>
+</html>

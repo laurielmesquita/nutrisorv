@@ -34,7 +34,7 @@ gulp.task('sass', function() {
 gulp.task('html', function(){
    return gulp.src([
       './app/**/*.html',
-      '!src/inc/**/*'
+      '!./app/inc/**/*'
    ])
    .pipe(include())
    .pipe(gulp.dest('./dist/'))
@@ -118,7 +118,8 @@ gulp.task('copy', ['clean'], function(){
       './app/scripts/popper.min.js',
       './app/scripts/bootstrap.min.js',
       './app/scripts/imagesloaded.js',
-      './app/scripts/imagefill.js'
+      './app/scripts/imagefill.js',
+      './app/favicon.ico'
    ], {'base': 'app'})
    .pipe(gulp.dest('./dist'))
 })

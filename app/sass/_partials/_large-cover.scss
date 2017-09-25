@@ -11,6 +11,14 @@
       height: 520px;
    }
 
+   &.largeCover--internal {
+      height: 600px;
+
+      @media screen and (max-width: 576px) {
+         height: 500px;
+      }
+   }
+
    img {
       width: 100%;
       height: auto;
@@ -24,13 +32,13 @@
 
    &__overlay {
       z-index: 3;
-      background-color: rgba(0, 0, 0, .3);
+      background-color: rgba(0, 0, 0, .4);
 
       @include overlay;
    }
 
    &:hover .largeCover__overlay {
-      background-color: rgba(0, 0, 0, .43);
+      background-color: rgba(0, 0, 0, .5);
    }
 
    &__inner {
@@ -55,7 +63,7 @@
       text-shadow: $df-shadow;
       font-weight: 300;
       font-size: 1.7rem;
-      line-height: 1.5rem;
+      line-height: 1.2;
    }
 }
 
