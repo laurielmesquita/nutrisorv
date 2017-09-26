@@ -119,7 +119,8 @@ gulp.task('copy', ['clean'], function(){
       './app/scripts/bootstrap.min.js',
       './app/scripts/imagesloaded.js',
       './app/scripts/imagefill.js',
-      './app/favicon.ico'
+      './app/favicon.ico',
+      './app/social-logo.jpg'
    ], {'base': 'app'})
    .pipe(gulp.dest('./dist'))
 })
