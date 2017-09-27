@@ -6,10 +6,18 @@ html, body {
    height: 100%;
 }
 
+img {
+   width: 100%;
+}
+
+figure {
+   margin-bottom: 0;
+}
+
 .titleSection {
+   margin-bottom: 15px;
    font-weight: 700;
    font-size: 2.5rem;
-   margin-bottom: 15px;
 }
 
 // Rules for dynamic Cover
@@ -75,4 +83,31 @@ html, body {
          background-color: rgba(0, 0, 0, .43);
       }
    }
+}
+
+// Separators
+.lineCover-separator,
+.line-separator {
+   display: block;
+   margin-top: 25px;
+   margin-right: auto;
+   margin-bottom: 25px;
+   margin-left: auto;
+   width: 45px;
+   height: 2px;
+   border-radius: 99px;
+   background-color: $main-red;
+   line-height: 40px;
+
+   &.to-lft {
+      margin-top: 20px;
+      margin-bottom: 18px;
+      margin-left: 0;
+   }
+}
+
+.line-separator {
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   background-color: lighten($main-black, 60);
 }

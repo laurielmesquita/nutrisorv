@@ -7,20 +7,7 @@
    height: 678px;
    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
 
-   @media screen and (max-width: 576px) {
-      height: 520px;
-   }
-
-   &.largeCover--internal {
-      height: 600px;
-
-      @media screen and (max-width: 576px) {
-         height: 500px;
-      }
-   }
-
    img {
-      width: 100%;
       height: auto;
 
       @include transition;
@@ -65,23 +52,21 @@
       font-size: 1.7rem;
       line-height: 1.2;
    }
-}
 
-.lineCover-separator {
-   display: block;
-   margin-top: 25px;
-   margin-right: auto;
-   margin-bottom: 25px;
-   margin-left: auto;
-   width: 45px;
-   height: 2px;
-   border-radius: 99px;
-   background-color: $main-red;
-   line-height: 40px;
+   @media screen and (max-width: 576px) {
+      height: 520px;
 
-   &.to-lft {
-      margin-top: 20px;
-      margin-bottom: 18px;
-      margin-left: 0;
+   }
+
+   &.largeCover--internal {
+      height: 600px;
+
+      .largeCover__title {
+         font-size: 2.5rem;
+      }
+
+      @media screen and (max-width: 576px) {
+         height: 500px;
+      }
    }
 }
