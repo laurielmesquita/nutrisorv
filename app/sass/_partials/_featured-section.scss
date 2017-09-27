@@ -4,11 +4,13 @@
 
 .featureSection {
 
-   figure {
+   figure,
+   figure img {
       overflow: hidden;
       border-radius: 0 $bd-radius $bd-radius 0;
 
-      &.order-lg-1 {
+      &.order-lg-1,
+      &.order-lg-1 img {
          border-radius: $bd-radius 0 0 $bd-radius;
       }
 
@@ -64,7 +66,9 @@
    @media screen and (max-width: 991px) {
 
       figure,
-      figure.order-lg-1 {
+      figure img,
+      figure.order-lg-1,
+      figure.order-lg-1 img {
          border-radius: $bd-radius;
       }
 
