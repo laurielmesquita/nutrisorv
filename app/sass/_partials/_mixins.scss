@@ -19,8 +19,6 @@
    transition: all .35s linear;
 }
 
-
-
 @mixin img-filter {
    filter:  saturate(140%) blur(3px);
 }

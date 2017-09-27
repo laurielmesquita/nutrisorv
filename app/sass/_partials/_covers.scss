@@ -10,8 +10,10 @@
    height: auto;
 
    &.generalCover--fill {
+      overflow: hidden;
       margin-bottom: 60px;
       height: 478px;
+      border-radius: $bd-radius;
       color: white;
       text-align: center;
    }
@@ -27,7 +29,6 @@
    &:hover img {
       @include img-filter;
    }
-
 
    &__inner {
       position: absolute;
@@ -88,6 +89,13 @@
    padding: 0;
    width: 100%;
    height: 100%;
+   background-color: rgba(0, 0, 0, .4);
+
+   @include transition;
+
+   &:hover {
+      background-color: rgba(0, 0, 0, .5);
+   }
 
    p:last-of-type {
       margin: 0;

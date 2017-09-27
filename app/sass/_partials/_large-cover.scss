@@ -17,27 +17,6 @@
       @include img-filter;
    }
 
-   &__overlay {
-      z-index: 3;
-      background-color: rgba(0, 0, 0, .4);
-
-      @include overlay;
-   }
-
-   &:hover .largeCover__overlay {
-      background-color: rgba(0, 0, 0, .5);
-   }
-
-   &__inner {
-      display: table-cell;
-      vertical-align: middle;
-
-      .container {
-         position: relative;
-         z-index: 5;
-      }
-   }
-
    &__title {
       margin-bottom: 1.4rem;
       text-shadow: $df-shadow;
