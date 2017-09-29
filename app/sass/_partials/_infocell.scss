@@ -4,20 +4,32 @@
 
 .cardInfo {
    overflow: hidden;
+   margin-top: 30px;
    margin-bottom: 30px;
+   height: 95%;
    border-radius: $bd-radius;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
    text-align: center;
+
+   @include transition;
+
+   &:hover {
+      box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.3),
+      0 20px 80px rgba(0, 0, 0, 0.1);
+      transform: translateY(-3px) translateZ(0);
+   }
 
    .card-body {
 
       .btn-primary {
-         white-space: normal;
          margin-bottom: 5px;
          padding: .5rem 1.3rem;
          border-color: $main-red;
          border-radius: $bd-radius;
          background-color: white;
          color: $main-red;
+         white-space: normal;
 
          &:hover,
          &[aria-expanded="true"] {
@@ -38,7 +50,6 @@
       .card-body {
          margin-top: 20px;
          padding-right: 0;
-         padding-bottom: 0;
          padding-left: 0;
          border: none;
          border-top: 1px solid rgba(0,0,0,.125);

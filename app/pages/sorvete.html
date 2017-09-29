@@ -33,8 +33,14 @@
                <li class="nav-item">
                   <a class="nav-link" href="./empresa.html">Sobre Nós</a>
                </li>
-               <li class="nav-item active">
-                  <a class="nav-link" href="./cardapio.html">Cardapio <span class="sr-only">(current)</span></a>
+               <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="./cardapio.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cardapio <span class="sr-only">(current)</span></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="./cardapio.html">Todos</a>
+                     <a class="dropdown-item active" href="./sorvete.html">Sorvetes</a>
+                     <a class="dropdown-item" href="./shake.html">Sundaes & Shakes</a>
+                     <a class="dropdown-item" href="./especial.html">Especiais Nutri Sorv</a>
+                  </div>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="./lojas.html">Nossas Lojas</a>
@@ -64,7 +70,7 @@
 
    <!-- Containt -->
    <div class="container">
-      <div class="row">
+      <div class="row is-flex">
 
          <div class="col-md-4">
             <section class="card cardInfo">

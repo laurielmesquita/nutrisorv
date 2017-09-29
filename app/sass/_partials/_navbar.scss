@@ -14,7 +14,17 @@
    }
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.dropdown-item {
+   color: rgba(0,0,0,.5);
+
+   &.active {
+      background-color: white;
+      color: rgba(0,0,0,.9);
+   }
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.dropdown-item:hover {
    color: $main-red;
 }
 
