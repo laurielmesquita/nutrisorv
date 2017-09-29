@@ -1,0 +1,61 @@
+/**
+*   INFOCELL
+*/
+
+.cardInfo {
+   overflow: hidden;
+   margin-bottom: 30px;
+   border-radius: $bd-radius;
+   text-align: center;
+
+   .card-body {
+
+      .btn-primary {
+         white-space: normal;
+         margin-bottom: 5px;
+         padding: .5rem 1.3rem;
+         border-color: $main-red;
+         border-radius: $bd-radius;
+         background-color: white;
+         color: $main-red;
+
+         &:hover {
+            background-color: $main-red;
+            color: white;
+         }
+      }
+
+      p {
+         color: #89888d;
+      }
+
+      .card-title {
+         font-weight: 700;
+         font-size: 1.55rem;
+      }
+
+      .card-body {
+         margin-top: 20px;
+         padding-right: 0;
+         padding-bottom: 0;
+         padding-left: 0;
+         border: none;
+         border-top: 1px solid rgba(0,0,0,.125);
+         text-align: left;
+
+         p {
+            margin-bottom: 5px;
+
+            i {
+               color: black;
+               font-weight: 700;
+               font-style: normal;
+            }
+
+            &:last-of-type {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+}

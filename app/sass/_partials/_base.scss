@@ -14,6 +14,16 @@ figure {
    margin-bottom: 0;
 }
 
+*:focus,
+*:active {
+   outline: 0;
+   outline-width: 0;
+   -webkit-box-shadow: 0;
+
+   -webkit-appearance: 0;
+   -webkit-focus-ring-color: 0;
+}
+
 .titleSection {
    margin-bottom: 15px;
    font-weight: 700;
