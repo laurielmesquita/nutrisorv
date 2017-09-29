@@ -19,7 +19,8 @@
          background-color: white;
          color: $main-red;
 
-         &:hover {
+         &:hover,
+         &[aria-expanded="true"] {
             background-color: $main-red;
             color: white;
          }
