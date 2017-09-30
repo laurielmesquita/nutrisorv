@@ -14,6 +14,30 @@ figure {
    margin-bottom: 0;
 }
 
+a {
+   color: $main-red;
+
+   @include transition;
+
+   &:hover {
+      color: $main-red;
+      text-decoration: underline;
+   }
+}
+
+.page-link,
+.page-link:hover,
+.page-link:focus,
+.page-link:active {
+   color: $main-red;
+   border: 1px solid #ddd;
+}
+
+.page-item.active .page-link {
+   border-color: $main-red;
+   background-color: $main-red;
+}
+
 :focus,
 :active {
    outline: 0;
@@ -89,6 +113,24 @@ figure {
       0 15px 40px rgba(0, 0, 0, 0.3),
       0 20px 80px rgba(0, 0, 0, 0.1);
       transform: translateY(-3px) translateZ(0);
+   }
+}
+
+.btn-primary,
+.btn-primary:active {
+   margin-bottom: 5px;
+   padding: .5rem 1.3rem;
+   border-color: $main-red;
+   border-radius: $bd-radius;
+   background-color: white;
+   color: $main-red;
+   white-space: normal;
+
+   &:hover,
+   &[aria-expanded="true"] {
+      border-color: $main-red;
+      background-color: $main-red;
+      color: white;
    }
 }
 

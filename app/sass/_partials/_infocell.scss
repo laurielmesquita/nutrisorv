@@ -22,22 +22,6 @@
 
    .card-body {
 
-      .btn-primary {
-         margin-bottom: 5px;
-         padding: .5rem 1.3rem;
-         border-color: $main-red;
-         border-radius: $bd-radius;
-         background-color: white;
-         color: $main-red;
-         white-space: normal;
-
-         &:hover,
-         &[aria-expanded="true"] {
-            background-color: $main-red;
-            color: white;
-         }
-      }
-
       p {
          color: #89888d;
       }
