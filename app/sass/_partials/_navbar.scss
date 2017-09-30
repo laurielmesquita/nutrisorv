@@ -17,7 +17,8 @@
 .dropdown-item {
    color: rgba(0,0,0,.5);
 
-   &.active {
+   &.active,
+   &:active {
       background-color: white;
       color: rgba(0,0,0,.9);
    }

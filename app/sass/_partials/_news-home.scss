@@ -65,7 +65,8 @@
 .newsCover--design {
    overflow: hidden;
    border-radius: $bd-radius;
-   box-shadow: 0 10px 13px rgba(0,0,0,.15);
+   border: 1px solid rgba(0,0,0,.125);
+   // box-shadow: 0 10px 13px rgba(0,0,0,.15);
 
    @include transition;
 

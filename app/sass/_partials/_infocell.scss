@@ -6,9 +6,9 @@
    overflow: hidden;
    margin-top: 30px;
    margin-bottom: 30px;
-   height: 95%;
+   // height: 95%;
    border-radius: $bd-radius;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+   // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
    text-align: center;
 
    @include transition;
@@ -50,6 +50,7 @@
       .card-body {
          margin-top: 20px;
          padding-right: 0;
+         padding-bottom: 0;
          padding-left: 0;
          border: none;
          border-top: 1px solid rgba(0,0,0,.125);

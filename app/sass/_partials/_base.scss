@@ -14,10 +14,11 @@ figure {
    margin-bottom: 0;
 }
 
-*:focus,
-*:active {
+:focus,
+:active {
    outline: 0;
    outline-width: 0;
+   border: 0;
    -webkit-box-shadow: 0;
 
    -webkit-appearance: 0;
