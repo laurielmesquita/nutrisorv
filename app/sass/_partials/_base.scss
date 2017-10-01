@@ -26,11 +26,15 @@ a {
 }
 
 .page-link,
-.page-link:hover,
-.page-link:focus,
 .page-link:active {
-   color: $main-red;
    border: 1px solid #ddd;
+   color: black;
+}
+.page-link:hover,
+.page-link:focus {
+   border: 1px solid $main-red;
+   background-color: $main-red;
+   color: white;
 }
 
 .page-item.active .page-link {
