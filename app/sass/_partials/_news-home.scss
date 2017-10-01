@@ -29,43 +29,15 @@
       color: #89888d;
    }
 
-   .card-link {
-      position: relative;
-      display: inline-block;
-      color: $main-red;
-
-      &:before, &:after {
-         position: absolute;
-         top: 51%;
-         right: -12px;
-         display: block;
-         margin-top: -6px;
-         width: 0;
-         height: 8px;
-         border-right: 2px solid;
-         content: '';
-         transform: rotate(135deg);
-
-         @include transition;
-      }
-
-      &:after {
-         margin-top: -1px;
-         transform: rotate(45deg);
-      }
-
-      &:hover {
-         &:before, &:after {
-            right: -20px;
-         }
-      }
+   .btn-primary {
+      margin-top: .5rem;
    }
 }
 
 .newsCover--design {
    overflow: hidden;
-   border-radius: $bd-radius;
    border: 1px solid rgba(0,0,0,.125);
+   border-radius: $bd-radius;
    // box-shadow: 0 10px 13px rgba(0,0,0,.15);
 
    @include transition;

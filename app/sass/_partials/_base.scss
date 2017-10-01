@@ -77,6 +77,18 @@ a {
    margin-bottom: 15px;
    font-weight: 700;
    font-size: 2.5rem;
+
+   a {
+      display: block;
+      color: #212529;
+      text-decoration: none;
+   }
+
+   &:hover {
+      a {
+         color: $main-red;
+      }
+   }
 }
 
 // Rules for dynamic Cover
@@ -149,6 +161,33 @@ a {
    background-color: white;
    color: $main-red;
    white-space: normal;
+
+   @include transition;
+
+   i {
+      padding-left: .1rem;
+      font-style: normal;
+
+      @include transition;
+   }
+   i.link-back {
+      padding-left: 0;
+      padding-right: .1rem;
+      font-style: normal;
+
+      @include transition;
+   }
+
+   &:hover {
+      i {
+         padding-left: .5rem;
+      }
+
+      i.link-back {
+         padding-left: 0;
+         padding-right: .5rem;
+      }
+   }
 
    &:hover,
    &[aria-expanded="true"] {
