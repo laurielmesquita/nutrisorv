@@ -35,6 +35,10 @@
       margin-bottom: 30px;
       border-radius: $bd-radius;
    }
+
+   .figure img {
+      border-radius: $bd-radius !important;
+   }
 }
 
 // Aside
