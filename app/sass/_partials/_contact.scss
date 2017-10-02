@@ -1,0 +1,58 @@
+/**
+*   CONTACT
+*/
+
+.mapCover {
+   position: relative;
+   overflow: hidden;
+   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
+
+   .embed-responsive-16by9:before {
+      padding-top: 46.25%;
+
+      @media screen and (max-width: 576px) {
+         padding-top: 86.25%;
+      }
+   }
+
+   &__inner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      display: block;
+      background-color: rgba(0, 0, 0, .7);
+      color: white;
+      text-align: center;
+      opacity: 1;
+
+      @include transition;
+
+      @media screen and (max-width: 991px) {
+         display: none;
+      }
+
+      .container {
+         display: table;
+         height: 100%;
+
+         .middleCover {
+            display: table-cell;
+            vertical-align: middle;
+         }
+
+         .largeCover__text {
+            margin-bottom: 0;
+         }
+      }
+   }
+
+   &:hover {
+      .mapCover__inner {
+         opacity: 0;
+         visibility: hidden;
+      }
+   }
+}
