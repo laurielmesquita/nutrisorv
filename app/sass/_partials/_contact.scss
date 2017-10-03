@@ -25,11 +25,14 @@
       left: 0;
       z-index: 100;
       display: block;
+      // background-color: rgba(165, 125, 7, .7);
       background-color: rgba(0, 0, 0, .75);
       color: white;
       text-align: center;
       opacity: 1;
 
+      -webkit-backdrop-filter: saturate(180%) blur(5px) !important;
+      backdrop-filter: saturate(180%) blur(5px) !important;
       @include transition;
 
       @media screen and (max-width: 991px) {
@@ -100,10 +103,10 @@ form#needs-validation {
    padding-top: 1rem;
 
    .btn-primary {
-     margin-top: .5rem;
-  }
+      margin-top: .5rem;
+   }
 
-  .form-control {
-     border-radius: .7rem;
-  }
+   .form-control {
+      border-radius: .7rem;
+   }
 }
