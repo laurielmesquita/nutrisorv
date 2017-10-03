@@ -2,9 +2,11 @@
 *   CONTACT
 */
 
+// Map cover
 .mapCover {
    position: relative;
    overflow: hidden;
+   margin-bottom: 60px;
    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
 
    .embed-responsive-16by9:before {
@@ -23,7 +25,7 @@
       left: 0;
       z-index: 100;
       display: block;
-      background-color: rgba(0, 0, 0, .7);
+      background-color: rgba(0, 0, 0, .75);
       color: white;
       text-align: center;
       opacity: 1;
@@ -51,8 +53,57 @@
 
    &:hover {
       .mapCover__inner {
-         opacity: 0;
          visibility: hidden;
+         opacity: 0;
       }
    }
+}
+
+// Contact info
+.contactInfo {
+   padding-top: 1rem;
+   padding-right: 2rem;
+
+   p,
+   p a {
+      margin-bottom: .1rem;
+      color: #89888d;
+
+      img.whatsapp {
+         display: inline-block;
+         margin-left: 20px;
+         width: 29px;
+         height: 28px;
+      }
+
+      a:hover {
+         color: $main-red;
+         text-decoration: none;
+      }
+   }
+
+   .col {
+      margin-bottom: .3rem;
+   }
+
+   .col-10 {
+      margin-bottom: 1.5rem;
+
+      &:last-of-type {
+         margin-bottom: 0;
+      }
+   }
+}
+
+// Forms
+form#needs-validation {
+   padding-top: 1rem;
+
+   .btn-primary {
+     margin-top: .5rem;
+  }
+
+  .form-control {
+     border-radius: .7rem;
+  }
 }

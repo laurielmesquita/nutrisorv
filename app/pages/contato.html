@@ -76,6 +76,63 @@
    <div class="container">
       <div class="row">
 
+         <!-- Info -->
+         <div class="col-md-6">
+            <h3>Vamos entrar em contato</h3>
+            <span class="lineCover-separator to-lft"></span>
+            <div class="row contactInfo">
+               <div class="col">
+                  @@include('../inc/icons/address.min.svg')
+               </div>
+               <section class="col-10">
+                  <h5>Endereço</h5>
+                  <p>Q. Setenta e Seis, 76 - Saci, Teresina - PI, Brazil</p>
+               </section>
+               <div class="w-100"></div>
+               <div class="col">
+                  @@include('../inc/icons/email.min.svg')
+               </div>
+               <section class="col-10">
+                  <h5>E-mail</h5>
+                  <p><a href="mailto:atendimento@nutrisorv.com.br">atendimento@nutrisorv.com.br</a></p>
+                  <p><a href="mailto:sac@nutrisorv.com.br">sac@nutrisorv.com.br</a></p>
+               </section>
+               <div class="w-100"></div>
+               <div class="col">
+                  @@include('../inc/icons/phone.min.svg')
+               </div>
+               <section class="col-10">
+                  <h5>Telefone</h5>
+                  <p><a href="tel:+5586998260444" title="Nutri Sorv Fixo">+55 86 99826-0444</a></p>
+                  <p><a href="tel:+5586999362145" title="Nutri Sorv Celular e WhatsApp">+55 86 99936-2145<img class="whatsapp" src="../images/whatsapp.png" alt="WhatsApp"> </a></p>
+               </section>
+            </div>
+            <span class="line-separator d-md-none"></span>
+         </div>
+         
+         <!-- Form -->
+         <div class="col-md-6">
+            <h3>Envie uma mensagem</h3>
+            <span class="lineCover-separator to-lft"></span>
+            <form id="needs-validation" novalidate>
+               <div class="form-group">
+                  <label class="form-control-label" for="formName">Seu nome:</label>
+                  <input type="text" class="form-control" id="formName" placeholder="Seu nome" required>
+                  <div class="invalid-feedback">Por favor, escreva seu nome.</div>
+               </div>
+               <div class="form-group">
+                  <label class="form-control-label" for="formMail">Seu e-mail:</label>
+                  <input type="email" class="form-control" id="formMail" placeholder="Seu e-mail" required>
+                  <div class="invalid-feedback">Por favor, escreva seu e-mail.</div>
+               </div>
+               <div class="form-group">
+                  <label for="formMessage">Sua mensagem:</label>
+                  <textarea class="form-control" id="formMessage" rows="3" placeholder="Deixe sua mensagem aqui" required></textarea>
+                  <div class="invalid-feedback">Por favor, escreva sua mensagem.</div>
+               </div>
+               <button type="submit" class="btn btn-primary">Enviar mensagem <i>→</i></button>
+            </form>
+         </div>
       </div>
    </div>
 
@@ -85,5 +142,21 @@
 
    <!-- Scripts -->
    @@include('../inc/scripts.html')
+   <script>
+   // Example starter JavaScript for disabling form submissions if there are invalid fields
+   (function() {
+      "use strict";
+      window.addEventListener("load", function() {
+         var form = document.getElementById("needs-validation");
+         form.addEventListener("submit", function(event) {
+            if (form.checkValidity() == false) {
+               event.preventDefault();
+               event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+         }, false);
+      }, false);
+   }());
+   </script>
 </body>
 </html>
