@@ -10,10 +10,10 @@
    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
 
    .embed-responsive-16by9:before {
-      padding-top: 46.25%;
+      padding-top: 36.20%;
 
       @media screen and (max-width: 576px) {
-         padding-top: 86.25%;
+         padding-top: 66.25%;
       }
    }
 
