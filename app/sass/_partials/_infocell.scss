@@ -10,6 +10,10 @@
 
    @include transition;
 
+   td {
+      color: $main-gray;
+   }
+
    &:hover {
       box-shadow:
       0 15px 40px rgba(0, 0, 0, 0.3),
