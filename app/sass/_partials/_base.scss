@@ -43,17 +43,6 @@ a {
    background-color: $main-red;
 }
 
-:focus,
-:active {
-   outline: 0;
-   outline-width: 0;
-   border: 0;
-   -webkit-box-shadow: 0;
-
-   -webkit-appearance: 0;
-   -webkit-focus-ring-color: 0;
-}
-
 .figure,
 .embed-responsive {
    margin-bottom: 1.2rem;

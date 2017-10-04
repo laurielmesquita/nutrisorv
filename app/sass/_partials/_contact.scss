@@ -104,9 +104,21 @@ form#needs-validation {
 
    .btn-primary {
       margin-top: .5rem;
+
+      &:hover {
+         cursor: pointer;
+      }
    }
 
    .form-control {
       border-radius: .7rem;
    }
+}
+
+.form-control:focus {
+       border-color: black;
+}
+
+.form-control:hover {
+       border-color: $main-gray;
 }
