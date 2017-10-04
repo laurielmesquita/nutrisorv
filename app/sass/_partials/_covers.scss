@@ -152,4 +152,11 @@
       opacity: 1;
       transform: translateY(0);
    }
+
+   .socialSection {
+      .col-md-8,
+      .col-md-4 {
+         margin-bottom: $mb-30;
+      }
+   }
 }
