@@ -5,13 +5,13 @@
 .smallCover {
    position: relative;
    overflow: hidden;
-   margin-bottom: 30px;
+   margin-bottom: $mb-30;
    width: 100%;
    height: auto;
 
    &.generalCover--fill {
       overflow: hidden;
-      margin-bottom: 60px;
+      margin-bottom: $mb-90;
       height: 478px;
       border-radius: $bd-radius;
       color: white;
@@ -45,7 +45,7 @@
    &__overlay {
       z-index: 3;
       border-radius: $bd-radius;
-      background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .75));
+      background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0, .6));
 
       @include overlay;
    }

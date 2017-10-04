@@ -2,9 +2,12 @@
 *   NEWS HOME
 */
 
+.newsSection {
+   margin-bottom: $mb-60;
+}
+
 .cardCover {
-   margin-bottom: 30px;
-   height: 94%;
+   margin-bottom: $mb-30;
    border: none;
 
    .cardCover__img,
@@ -18,15 +21,6 @@
       &:hover {
          transform: scale(1.1);
       }
-   }
-
-   .card-title {
-      font-weight: 700;
-      font-size: 1.55rem;
-   }
-
-   .card-text {
-      color: #89888d;
    }
 
    .btn-primary {

@@ -14,7 +14,7 @@
 
       a {
          display: block;
-         color: #212529;
+         color: $two-black;
       }
 
       &:hover {
@@ -26,13 +26,13 @@
    }
 
    &__date {
-      color: #89888d;
+      color: $main-gray;
       font-size: .9rem;
    }
 
    &__img {
       overflow: hidden;
-      margin-bottom: 30px;
+      margin-bottom: $mb-30;
       border-radius: $bd-radius;
    }
 
@@ -43,7 +43,7 @@
 
 // Aside
 .asideBox {
-   margin-bottom: 60px;
+   margin-bottom: $mb-60;
 
    &__title {
       // padding-bottom: 1rem;
@@ -55,7 +55,7 @@
 
       a {
          display: block;
-         color: #89888d;
+         color: $main-gray;
          font-size: .9rem;
 
          &:hover {
@@ -87,6 +87,6 @@
 
 @media screen and (max-width: 767px) {
    .pagination {
-      margin-bottom: 100px;
+      margin-bottom: $mb-100;
    }
 }

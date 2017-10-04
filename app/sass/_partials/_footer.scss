@@ -52,14 +52,18 @@ svg {
 }
 
 @media screen and (max-width: 991px) {
-   .mainFooter p {
-      margin-bottom: 10px;
-   }
-   .col-lg-4 {
-      margin-bottom: 30px;
+   .mainFooter {
 
-      &:last-of-type {
-         margin-bottom: 0;
+      p {
+         margin-bottom: 10px;
+      }
+
+      .col-lg-4 {
+         margin-bottom: $mb-30;
+
+         &:last-of-type {
+            margin-bottom: 0;
+         }
       }
    }
    .brand-footer {

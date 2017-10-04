@@ -30,6 +30,7 @@ a {
    border: 1px solid #ddd;
    color: black;
 }
+
 .page-link:hover,
 .page-link:focus {
    border: 1px solid $main-red;
@@ -58,6 +59,7 @@ a {
    margin-bottom: 1.2rem;
 }
 
+// Breadcrumb
 .breadcrumb {
    margin-bottom: 2.5rem;
    border: 1px solid #ddd;
@@ -74,15 +76,22 @@ a {
    }
 }
 
+// Sections
 .titleSection {
-   margin-bottom: 15px;
+   margin-bottom: 0;
    font-weight: 700;
    font-size: 2.5rem;
+   line-height: .7;
+
+   .newsSection & {
+      text-align: center;
+   }
 
    a {
       display: block;
-      color: #212529;
+      color: $two-black;
       text-decoration: none;
+      line-height: .7;
    }
 
    &:hover {
@@ -92,9 +101,19 @@ a {
    }
 }
 
+.subtitleSection {
+   margin-bottom: 1rem;
+   color: $main-gray;
+
+   .newsSection & {
+      margin-bottom: 2rem;
+      text-align: center;
+   }
+}
+
 // Rules for dynamic Cover
 .generalCover--fill {
-   margin-bottom: 60px;
+   margin-bottom: $mb-90;
    width: 100%;
    background-color: $main-black;
    color: white;
@@ -133,10 +152,6 @@ a {
    }
 }
 
-.col-lg-7 .smallCover {
-   margin-bottom: 60px;
-}
-
 // Shadows and others effects
 .generalCover--design {
    overflow: hidden;
@@ -153,12 +168,17 @@ a {
    }
 }
 
+// Buttons
+.btn {
+   font-size: $p-size;
+}
+
 .btn-primary,
 .btn-primary:active {
    margin-bottom: 5px;
-   padding: .5rem 1.3rem;
+   padding: .6rem 1.3rem;
    border-color: $main-red;
-   border-radius: $bd-radius;
+   border-radius: $bt-radius;
    background-color: white;
    color: $main-red;
    white-space: normal;
@@ -172,8 +192,8 @@ a {
       @include transition;
    }
    i.link-back {
-      padding-left: 0;
       padding-right: .1rem;
+      padding-left: 0;
       font-style: normal;
 
       @include transition;
@@ -185,8 +205,8 @@ a {
       }
 
       i.link-back {
-         padding-left: 0;
          padding-right: .5rem;
+         padding-left: 0;
       }
    }
 
@@ -225,6 +245,20 @@ a {
    background-color: lighten($main-black, 60);
 }
 
+// Cards
+.card-title {
+   font-weight: 700;
+   font-size: $t-size;
+}
+
+.card-body {
+   p {
+      color: $main-gray;
+      font-size: $p-size;
+   }
+}
+
+// Others
 .pageNocover {
    display: flex;
    width: 100%;

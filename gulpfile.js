@@ -117,6 +117,7 @@ gulp.task('copy', ['clean'], function(){
       './app/scripts/jquery-3.2.1.slim.min.js',
       './app/scripts/popper.min.js',
       './app/scripts/bootstrap.min.js',
+      './app/scripts/instafeed.min.js',
       './app/scripts/imagesloaded.js',
       './app/scripts/imagefill.js',
       './app/favicon.ico',
