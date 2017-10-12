@@ -160,7 +160,7 @@ a {
 .generalCover--design {
    overflow: hidden;
    border-radius: $bd-radius;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+   // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 
    @include transition;
 
